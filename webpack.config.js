@@ -29,6 +29,10 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
         include: path.resolve(__dirname, 'js'),
         test: /\.js$/, // if it passes this test then run loader
         loader: 'babel-loader'
