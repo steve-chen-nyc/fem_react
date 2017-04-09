@@ -9,7 +9,8 @@ module.exports = {
     filename: 'bundle.js' // where bundle js to go
   },
   devServer: {
-    publicPath: '/public/'
+    publicPath: '/public/',
+    historyApiFallback: true
   },
   resolve: {
     extensions: ['.js', '.json']
