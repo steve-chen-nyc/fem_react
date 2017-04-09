@@ -7,11 +7,12 @@
   "license": "MIT",
   "scripts": {
     "test": "NODE_ENV=test jest",
-    "update-test": "npm run test -- -u",
+    "update-test": "NODE_ENV=test jest -u",
     "build": "webpack",
     "dev": "webpack-dev-server",
     "lint": "eslint js/**/*.js webpack.config.js",
-    "watch": "yarn build -- --watch"
+    "watch": "yarn build -- --watch",
+    "cover": "yarn test -- --coverage"
   },
   "dependencies": {
     "axios": "^0.15.3",
