@@ -5,7 +5,7 @@ class Header extends Component {
   render () {
     let utilSpace
     if (this.props.showSearch) {
-      utilSpace = <input onChange={this.handleSearchTermChange}
+      utilSpace = <input onChange={this.props.handleSearchTermChange}
         value={this.props.searchTerm} type='text' placeholder='Search' />
     } else {
       utilSpace = (
@@ -16,12 +16,14 @@ class Header extends Component {
         </h2>
       )
     }
-
     return (
       <header>
         <h1>
-          {utilSpace}
+          <Link to='/'>
+            svideo
+          </Link>
         </h1>
+        {utilSpace}
       </header>
     )
   }
